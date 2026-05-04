@@ -57,7 +57,7 @@ on:
           - 'default'
       better_net:
         description: '是否开启网络功能拓展配置(用于为ipset及需要iptables等高级网络功能内核支持的程序提供支持,天玑机型可能导致bug,建议关闭)'
-        required: true
+        required: false
         type: boolean
         default: 'false'
       adios_enable:
