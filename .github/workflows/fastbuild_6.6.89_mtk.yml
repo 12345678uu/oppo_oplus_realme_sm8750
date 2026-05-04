@@ -43,12 +43,12 @@ on:
         default: 'true'
       lz4kd_enable:
         description: '是否安装 LZ4KD 补丁(若已开启lz4+zstd补丁则可不开启)'
-        required: true
+        required: false
         type: boolean
         default: 'false'
       bbr_enable:
         description: "是否启用bbr算法(优化上行数据,对手机日用无太大意义甚至可能负优化;false关闭,true仅加入算法,default启用算法并设为默认)"
-        required: true
+        required: false
         type: choice
         default: 'false'
         options:
@@ -57,7 +57,7 @@ on:
           - 'default'
       better_net:
         description: '是否开启网络功能拓展配置(用于为ipset及需要iptables等高级网络功能内核支持的程序提供支持,天玑机型可能导致bug,建议关闭)'
-        required: true
+        required: false
         type: boolean
         default: 'false'
       adios_enable:
@@ -67,7 +67,7 @@ on:
         default: 'true'
       rekernel_enable:
         description: '是否启用Re-Kernel支持(与Freezer/NoActive等软件配合, 提升应用冻结能力)'
-        required: true
+        required: false
         type: boolean
         default: 'false'
       baseband_guard:
@@ -82,7 +82,7 @@ on:
         default: 'false'
       ccache_debug:
         description: '是否上传 Ccache调试日志(用于调试, 无需要不必开启)'
-        required: true
+        required: false
         type: boolean
         default: 'false'
       kernel_suffix:
